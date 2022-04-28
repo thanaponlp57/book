@@ -53,10 +53,10 @@
                     <td>{{book.price}}</td>
                     <td>{{book.description}}</td>
                     <td class="text-center">
-                        <button class="btn btn-sm btn-primary" routerLink="/edit-book/{{book._id}}">
+                        <button class="btn btn-sm btn-primary" routerLink="/edit-book/{{book.id}}">
                             Edit
                         </button>
-                        <button class="btn btn-sm btn-danger" (click)="delete(book._id, i)">
+                        <button class="btn btn-sm btn-danger" (click)="delete(book.id, i)">
                             Delete
                         </button>
                     </td>
